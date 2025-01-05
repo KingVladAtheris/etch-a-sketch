@@ -11,6 +11,9 @@ buttonPress.addEventListener("click", () => {
     } else {
         // Clear container before adding new divs
         divContainer.innerHTML = ''; 
+        // Clear the input field and set focus
+        buttonInput.value = "";
+        buttonInput.focus();
 
         for (let i = 0; i < squaresNumber; i++) {
             const dynamicDiv = document.createElement("div");

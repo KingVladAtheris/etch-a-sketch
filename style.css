@@ -6,17 +6,91 @@ html{
 }
 body{
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: #f0f8ff;
 }
 #container{
     display: flex;
     flex-wrap: wrap;
-    overflow: hidden;
-    height: 960px; 
-    width: 960px;
+    height: 400px; 
+    width: 400px;
     justify-content: space-evenly;
     align-items: stretch;
     margin: 0;
     padding: 0;
+}
+#user-input {
+    font-size: 18px;
+    padding: 10px 15px;
+    border: 2px solid #FF6347;
+    border-radius: 15px;
+    background-color: #FFEB3B;
+    color: #333;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+#user-input:focus {
+    border-color: #FF1493;
+    background-color: #FFFACD;
+    box-shadow: 0px 4px 15px rgba(255, 20, 147, 0.5);
+    outline: none;
+}
+#user-button {
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #FF6347;
+    color: white;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+#user-button:hover {
+    background-color: #FF4500;
+    box-shadow: 0px 6px 12px rgba(255, 69, 0, 0.4);
+}
+
+#user-button:active {
+    background-color: #D85F30;
+    box-shadow: 0px 2px 4px rgba(255, 69, 0, 0.3);
+}
+
+#user-button:focus {
+    outline: none;
+    box-shadow: 0px 0px 10px rgba(255, 69, 0, 0.6);
+}
+
+#title{
+    font-family: 'Patrick Hand', cursive;
+    font-size: 50px;
+    text-align: center;
+    color: #FF6343;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    margin-top: 10px;
+    padding: 20px;
+    background-color: #FFEB3B;
+    border: 3px solid #FF1493;
+    border-radius: 20px;
+    box-shadow: 0px 4px 15px rgba(255, 99, 71, 0.4);
+    animation: bounce 0.5s ease-in-out infinite alternate;
+}
+@keyframes bounce{
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(-10px);
+    }
+}
+#instruction{
+    font-family: 'Patrick Hand', cursive;
+    font-size: 20px;
+    color: #FF6343;
+    
 }
