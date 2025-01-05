@@ -1,0 +1,22 @@
+html{
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    height: 960px; 
+    width: 960px;
+    justify-content: space-evenly;
+    align-items: stretch;
+    margin: 0;
+    padding: 0;
+}
