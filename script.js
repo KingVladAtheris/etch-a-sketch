@@ -7,8 +7,8 @@ const divContainer = document.querySelector("#container");
 //Button logic
 buttonPress.addEventListener("click", () =>{
     const squaresNumber = parseInt(buttonInput.value, 10);
-    if(isNaN(squaresNumber) || squaresNumber <= 0){
-        alert("Please enter a number higher than 0.");
+    if(isNaN(squaresNumber) || squaresNumber <= 0 || squaresNumber > 100){
+        alert("Please enter a number between 1 and 100.");
     }
     else{
         for (let i = 0; i <= squaresNumber; i++){
